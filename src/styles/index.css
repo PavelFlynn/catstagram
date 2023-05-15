@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    @apply bg-white;
+}
+
+body {
+    @apply bg-slate-100;
+}
+
+/*
+    ::: Header - DropDown
+*/
+.cat-dropdown .p-dropdown {
+    @apply rounded-full;
+}
+
+.cat-dropdown .p-dropdown .p-dropdown-label {
+    @apply hidden;
+}
+
+.cat-dropdown .p-dropdown .p-dropdown-trigger {
+    @apply w-[40px] h-[40px];
+}
+
+.cat-dropdown .p-dropdown-items-wrapper {
+    @apply bg-red-200;
+}
+
+@media (min-width: 768px) {
+    .cat-dropdown .p-dropdown .p-dropdown-label {
+        @apply block text-sm;
+    }
+
+    .cat-dropdown .p-dropdown .p-dropdown-trigger {
+        @apply w-[3rem] h-auto;
+    }
+}
+
+/*
+    ::: Home - Dialog Modal
+*/
